@@ -1,0 +1,99 @@
+body {
+  margin: 10px;
+  padding: 10px;
+}
+
+.svg-container {
+  display: flex;
+}
+
+#drone {
+  animation: dronemove 10s ease-in-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+#popeller-1{
+  animation: propellarmove 0.6s linear infinite;
+  transform-origin: center;
+  transform-box:fill-box;
+  transform-style: preserve-3d;
+  
+  /* transform-box: fill-box; */
+}
+#popeller-2{
+  animation: propellarmove 0.6s linear infinite;
+  transform-origin: center;
+  transform-box:fill-box;
+  transform-style: preserve-3d;
+  
+  /* transform-box: fill-box; */
+}
+#popeller-3{
+  animation: propellarmove 0.6s linear infinite;
+  transform-origin: center;
+  transform-box:fill-box;
+  transform-style: preserve-3d;
+  
+  /* transform-box: fill-box; */
+}
+#popeller-4{
+  animation: propellarmove 0.6s linear infinite;
+  transform-origin: center;
+  transform-box:fill-box;
+  transform-style: preserve-3d;
+  
+  /* transform-box: fill-box; */
+}
+
+
+@keyframes dronemove {
+  0% {
+    translate: 0px 0px;
+    /* background-color: red; */
+    
+  }
+  20% {
+    translate: -300px 0px;
+    /* background-color: blue; */
+    
+  }
+  40% {
+    translate: -100px 80px;
+    /* background-color: blue; */
+    
+  }
+  60% {
+    translate: -50px 80px;
+    /* background-color: blue; */
+    
+  }
+  80% {
+    translate: -30px 80px;
+    /* background-color: blue; */
+    
+  }
+  100% {
+    translate: 0px 0px;
+    /* background-color: blue; */
+    
+  }
+}
+
+@keyframes propellarmove {
+    0% {
+      transform: skew(346deg) rotate(0deg);
+      /* transform: skew(346deg) rotate(0deg); */
+      /* background-color: red; */
+      
+    }
+
+    100% {
+        transform: skew(346deg) rotate(360deg);
+        /* transform: skew(346deg) rotate(360deg); */
+      /* background-color: blue; */
+      
+    }
+  }
+
+
